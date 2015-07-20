@@ -224,6 +224,7 @@ gulp.task('serve:dist', ['default'], function () {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
+    port: 80,
     server: 'dist'
   });
 });
