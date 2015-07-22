@@ -49,3 +49,40 @@ google-map {
 
     margin: 10px;
 }
+
+a {
+    color: #3F51B5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #3F51B5;
+    text-decoration: none;
+}
+
+.project {
+}
+
+.project h1 {
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.project p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.status h3 {
+    margin-bottom: 0;
+}
+
+.status span {
+    /*font-weight: bold;*/
+}
+
+.status.green span {
+    color: green;
+}

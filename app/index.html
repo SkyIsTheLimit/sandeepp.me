@@ -37,7 +37,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="images/logo.svg">
+
+    <!-- Open Sans -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
     <!-- Tile icon for Win8 (144x144) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
@@ -73,10 +77,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         <span>About Me</span>
                     </a>
 
-                    <!-- <a data-route="projects" href="#!/projects">
+                    <a data-route="projects" href="#!/projects">
                         <iron-icon icon="extension"></iron-icon>
                         <span>My Projects</span>
-                    </a> -->
+                    </a>
 
                     <a data-route="contact" href="#!/contact">
                         <iron-icon icon="mail"></iron-icon>
@@ -96,7 +100,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                     <!-- Application name -->
                     <div class="middle paper-font-display2 app-name">
-                        <iron-icon icon="group-work" style="height: 24px; width: 24px"></iron-icon>
+                        <iron-icon icon="face" style="height: 36px; width: 36px; margin: 10px;"></iron-icon>
+
                         Sandeep Prasad
                     </div>
 
@@ -112,6 +117,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         <section data-route="home">
                             <paper-material elevation="1" class="introduction">
                                 <img src="images/me.jpg" alt="" style="width: 192px; display: block; border-radius: 100%; margin: 10px auto; margin-bottom: 0">
+
                                 <div class="description">
                                     <p class="name">Sandeep Prasad</p>
                                     <span>Programmer &amp; Designer</span>
@@ -143,7 +149,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                                 <img src="images/technology.jpg" alt="" style="width: 100%">
 
-                                <p class="paper-font-subhead">Be sure to check out my projects . . .</p>
+                                <p class="paper-font-subhead">Be sure to check out my <a href="projects">projects</a> . . .</p>
                             </paper-material>
 
                             <paper-material>
@@ -156,7 +162,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         <section data-route="projects">
                             <paper-material elevation="1">
                                 <h2 class="paper-font-display2">My Projects</h2>
-                                <p>This is the projects section</p>
+                                <p class="paper-font-subhead">Hi, thanks for stopping by.
+                                    Check out a list of my projects here.
+                                    I like to list down my projects / future projects here.
+                                </p>
+                            </paper-material>
+
+                            <paper-material class="project">
+                                <a target="_blank" href="https://github.com/SkyIsTheLimit/ripjs">
+                                    <h1>REST In Peace</h1>
+                                </a>
+
+                                <img src="images/RIPJS.svg" alt="" style="width: 100%">
+
+                                <p>
+                                    REST In Peace is a project which aims to simplify the effort involved in rapidly prototyping solutions with a fully functional backend.
+                                    Many a times we find ourselves in situations where we want to create a quick prototype for the users to get the initial feedback.
+                                </p>
+
+                                <div class="status green">
+                                    <h3>Current Status</h3>
+                                    <span>In Progress</span>
+                                </div>
+
+                                <div class="link">
+                                    <p>You can find the project on <a href="https://github.com/SkyIsTheLimit/ripjs">Github</a></p>
+                                </div>
                             </paper-material>
                         </section>
 
