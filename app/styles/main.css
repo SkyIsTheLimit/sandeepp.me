@@ -12,3 +12,40 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+paper-material {
+    max-width: 800px;
+}
+
+.description {
+    text-align: center;
+    /*font-size: 1.01em;*/
+}
+
+.description .name {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.description span {
+    font-style: italic;
+
+    color: #333;
+}
+
+google-map {
+    height: 200px;
+};
+
+.introduction {
+    position: relative;
+}
+
+.introduction paper-fab {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    margin: 10px;
+}
