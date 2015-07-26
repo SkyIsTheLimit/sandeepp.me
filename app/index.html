@@ -46,9 +46,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <!-- Tile icon for Win8 (144x144) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild-->
 
     <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
     <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
@@ -57,12 +54,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <!-- will be replaced with elements/elements.vulcanized.html -->
     <link rel="import" href="elements/elements.html">
     <!-- endreplace-->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild-->
 </head>
 
 <body unresolved class="fullbleed layout vertical">
+    <div class="background">
+        <div class="screen"></div>
+    </div>
+
     <span id="browser-sync-binding"></span>
     <template is="dom-bind" id="app">
-
         <paper-drawer-panel id="paperDrawerPanel">
             <div drawer>
                 <!-- Drawer Toolbar -->
@@ -126,9 +129,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                                 <!-- <h2 class="paper-font-display2">About Me</h2> -->
 
                                 <!-- <p class="paper-font-subhead">Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat.</p> -->
-                                <p class="paper-font-subhead">
+                                <p>
                                     Hi, welcome to my website. A little bit about me . . .
                                     <!-- <paper-fab icon="add"></paper-fab> -->
+                                </p>
+
+                                <p>
+                                    I am inspired by the world around me. I am very fascinated by design. Design is every where around us. For me, design is not just limited to a user interface or how a product looks. I believe that design is present in all phases of a product's lifecycle. From starting to think about the concept to writing the first line of code to the final product, everything involves design in it.
+                                </p>
+
+                                <p>
+                                    Be it in our kitchens at home or our classrooms in school, or a spaceshuttle going to the moon, design exists everywhere.
+                                </p>
+
+                                <p>
+                                    I'm passionate about technology. It has shaped the world in a way like no other. I'm a software engineer by profession. The reason I became a software engineer is because software has the power to reach out to the world. It allows you to make an impact on the lives of other.
+                                </p>
+
+                                <p>
+                                    Design and technology is a very powerful combination known to us. There are just so many examples of well designed technology making an impact on people's lives all over the world. 
+                                </p>
+
+                                <p>
+                                    Check out my <a href="projects" data-route="projects">projects</a>
                                 </p>
                                 <!-- <paper-material elevation="1" class="paper-font-body2">
                                     <p class="paper-font-body2">This is another card.</p>
@@ -144,7 +167,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                                 </google-map>
                             </paper-material>
 
-                            <paper-material elevation="1">
+                            <!-- <paper-material elevation="1">
                                 <p class="paper-font-subhead">I love <b>Technology</b></p>
 
                                 <img src="images/technology.jpg" alt="" style="width: 100%">
@@ -156,19 +179,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                                 <p>I enjoy building with <b>Lego</b></p>
 
                                 <img src="images/lego.jpg" alt="" style="width: 100%">
-                            </paper-material>
+                            </paper-material> -->
                         </section>
 
                         <section data-route="projects">
                             <paper-material elevation="1">
-                                <h2 class="paper-font-display2">My Projects</h2>
+                                <h2>My Projects</h2>
                                 <p class="paper-font-subhead">Hi, thanks for stopping by.
-                                    Check out a list of my projects here.
-                                    I like to list down my projects / future projects here.
+                                    Check out my projects here.
                                 </p>
                             </paper-material>
 
-                            <paper-material class="project">
+                            <paper-material class="project social">
                                 <a target="_blank" href="https://github.com/SkyIsTheLimit/ripjs">
                                     <h1>REST In Peace</h1>
                                 </a>
@@ -177,7 +199,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                                 <p>
                                     REST In Peace is a project which aims to simplify the effort involved in rapidly prototyping solutions with a fully functional backend.
-                                    Many a times we find ourselves in situations where we want to create a quick prototype for the users to get the initial feedback.
+                                    Many a times we find ourselves in situations where we want to create a quick prototype for the users to get the initial feedback. We have frameworks to help us to do this to get a quick UI up and running in minutes. However, to connect that to a fully functional backend with a persistance option often involves a lot of time and effort. The only way out of this is to display mock data on your application, which is ok in certain situations. However, sometimes it is important to show real data and allow the user to add / modify / delete dat too.
+                                </p>
+
+                                <p>
+                                    That's where RIPJS comes into picture. It allows you to setup a fully functional backend with a persistance option within a matter of seconds.
                                 </p>
 
                                 <div class="status green">
@@ -186,7 +212,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                                 </div>
 
                                 <div class="link">
-                                    <p>You can find the project on <a href="https://github.com/SkyIsTheLimit/ripjs">Github</a></p>
+                                    <p>You can find the project on
+                                        <a href="https://github.com/SkyIsTheLimit/ripjs">
+                                            <img src="images/github-white.png" alt="">
+                                            <span>Github</span>
+                                        </a>
+                                    </p>
                                 </div>
                             </paper-material>
                         </section>
@@ -200,15 +231,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                             </paper-material>
                         </section>
 
-                        <section data-route="contact">
+                        <section data-route="contact" class="contact social">
                             <paper-material elevation="1">
-                                <h2 class="paper-font-display2">Contact</h2>
-                                <p>Contact me on</p>
+                                <h2>Contact</h2>
+                                <!-- <p>Contact me on</p> -->
 
-                                <paper-material elevation="0" class="contact-option">
-                                    <a target="_blank" href="https://www.facebook.com/sandeep3180">Facebook</a>
-                                    <a target="_blank" href="https://in.linkedin.com/in/sandeep3180">LinkedIn</a>
-                                    <a target="_blank" href="https://github.com/SkyIsTheLimit">Github</a>
+                                <paper-material elevation="0" class="contact-options">
+                                    <a target="_blank" href="https://www.facebook.com/sandeep3180">
+                                        <img src="images/facebook.png" alt="" />
+                                        <span>Facebook</span>
+                                    </a>
+                                    <a target="_blank" href="https://in.linkedin.com/in/sandeep3180">
+                                        <img src="images/linkedin.png" alt="">
+                                        <span>LinkedIn</span>
+                                    </a>
+                                        <a target="_blank" href="https://github.com/SkyIsTheLimit">
+                                        <img src="images/github.png" alt="">
+                                        <span>Github</span>
+                                    </a>
                                 </paper-material>
                             </paper-material>
                         </section>
